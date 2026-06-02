@@ -1,0 +1,72 @@
+services:
+  backend-django:
+    build:
+      context: ./code_source/backend
+      dockerfile: Dockerfile
+    image: abhar/backend-django:0.1.0
+    ports:
+      - "4000:4000"
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=django-insecure-qtm@abchssvfqcse-ft-dev-only
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/abhar
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=abhar
+      - ALLOWED_HOSTS=localhost,127.0.0.1,backend-django
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+    depends_on:
+      postgres:
+        condition: service_started
+    volumes:
+      - ./code_source/backend:/app
+
+  llm-assistant:
+    build:
+      context: ./services/llm-assistant
+      dockerfile: Dockerfile
+    image: abhar/llm-assistant:0.1.0
+    ports:
+      - "8000:8000"
+    environment:
+      - AI_INFER_URL=http://ai-infer-example:8001
+    depends_on:
+      - ai-infer-example
+
+  ai-infer-example:
+    build:
+      context: ./services/ai-infer-example
+      dockerfile: Dockerfile
+    image: abhar/ai-infer-example:0.1.0
+    ports:
+      - "8001:8001"
+
+  web-nextjs:
+    build:
+      context: ./apps/web-nextjs
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
+    image: abhar/web-nextjs:0.1.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend-django
+    volumes:
+      - ./apps/web-nextjs:/app
+      - /app/node_modules
+      - /app/.next
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=abhar
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data: {}

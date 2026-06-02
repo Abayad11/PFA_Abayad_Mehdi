@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abhar Santé Maroc">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#g)"/>
+  <!-- Cross + leaf motif for healthcare -->
+  <g fill="white">
+    <!-- cross -->
+    <rect x="56" y="24" width="16" height="80" rx="8"/>
+    <rect x="24" y="56" width="80" height="16" rx="8"/>
+    <!-- leaf -->
+    <path d="M96 48c-10 0-28 8-36 24 16-8 24-26 24-36 6 2 10 6 12 12z" opacity="0.85"/>
+  </g>
+</svg>

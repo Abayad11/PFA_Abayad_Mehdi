@@ -1,0 +1,52 @@
+# Node
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+.next-cache/
+.next-standalone/
+yarn.lock
+pnpm-lock.yaml
+
+# React Native
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+*.xcworkspace
+*.xcuserdatad
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.local
+.docker/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Helm/Argo
+chart.lock
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large files
+projet_federateur.pptx
+services/ai-infer-example/best_model.keras
+*.mp4

@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: REPLACE_WITH_REGISTRY/api-nest
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 4000
+env: []
+resources: {}

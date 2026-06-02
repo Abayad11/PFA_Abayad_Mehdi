@@ -1,0 +1,69 @@
+═══════════════════════════════════════════════════════════
+    COMPTE MÉDECIN CRÉÉ - Abhar Santé Maroc
+═══════════════════════════════════════════════════════════
+
+✅ COMPTE CRÉÉ AVEC SUCCÈS!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📧 EMAIL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   dr.mehdi@chu-casablanca.ma
+
+🔑 MOT DE PASSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Medecin2024!
+
+🏥 ÉTABLISSEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   chu-casablanca
+
+👨‍⚕️ RÔLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Médecin (Généraliste)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+🌐 COMMENT SE CONNECTER
+═══════════════════════════════════════════════════════════
+
+1. Ouvrez votre navigateur
+
+2. Allez sur:
+   http://localhost:3000/login
+
+3. Entrez vos identifiants:
+   Email:        dr.mehdi@chu-casablanca.ma
+   Mot de passe: Medecin2024!
+
+4. Cliquez sur "Se connecter"
+
+5. Vous serez redirigé vers votre dashboard:
+   http://localhost:3000/medecin/dashboard
+
+
+📊 FONCTIONNALITÉS DISPONIBLES
+═══════════════════════════════════════════════════════════
+
+✅ Dashboard médecin avec statistiques
+✅ Liste des patients
+✅ Conseiller IA médical (analyse IRM, radiographies)
+✅ Messagerie sécurisée
+✅ Gestion des dossiers médicaux
+
+
+🔐 SÉCURITÉ
+═══════════════════════════════════════════════════════════
+
+- Mot de passe: Medecin2024!
+  (Changez-le après la première connexion)
+
+- MFA (Authentification à 2 facteurs): Désactivé pour le moment
+  (Peut être activé dans les paramètres)
+
+
+═══════════════════════════════════════════════════════════
+Date de création: 3 Novembre 2025, 13h10
+Créé par: Mehdi Abayad & Zahra Zhar
+Projet: Abhar Santé Maroc
+═══════════════════════════════════════════════════════════
