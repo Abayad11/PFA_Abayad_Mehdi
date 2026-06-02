@@ -29,13 +29,60 @@ Créer un écosystème de santé numérique sécurisé pour connecter patients, 
 ## Répertoires
 - apps/web-nextjs: Portail web patient/clinicien (FR)
 - apps/mobile-rn: Application mobile (FR)
-- services/api-nest: API métier
+- code_source/backend: API Django REST (implémenté)
 - services/llm-assistant: Assistant LLM avec garde-fous
 - services/ai-infer-example: Service d’inférence IA (exemple)
 - platform/*: Charts/manifests Helm pour Keycloak, Kong, Postgres, MinIO, Kafka, OpenSearch, Vault, HAPI FHIR, Orthanc
 - infra/*: Terraform/Helm/Argo CD
 - security: Policies RLS, MFA, anonymisation
 - shared: Libs partagées (TS/Python)
+
+## 🚀 Démarrage Rapide
+
+### Prérequis
+- Docker & Docker Compose installés
+- Git installé
+
+### Cloner le projet
+```bash
+git clone https://github.com/Abayad11/PFA_Abayad_Mehdi.git
+cd projet-federateur
+```
+
+### Lancer les services
+```bash
+docker compose up -d
+```
+
+### Vérifier l'état
+```bash
+docker compose ps
+```
+
+**Services accessibles :**
+- Frontend (Next.js): http://localhost:3000
+- Backend (Django): http://localhost:4000
+- LLM Assistant: http://localhost:8000
+- AI Infer: http://localhost:8001
+- PostgreSQL: localhost:5432
+
+### Comptes de test
+| Rôle | Username | Password | Tenant |
+|------|----------|----------|--------|
+| Admin | admin | admin123 | chu-casablanca |
+| Médecin | medecin | medecin123 | chu-casablanca |
+| Patient | patient | patient123 | chu-casablanca |
+| Chercheur | chercheur | chercheur123 | chu-casablanca |
+
+### Arrêter les services
+```bash
+docker compose down
+```
+
+## 📚 Documentation
+- `GUIDE_TEST_COMPLET_FINAL.md` - Guide de test complet (étape par étape)
+- `DOCUMENTATION_COMPLETE.md` - Documentation technique détaillée
+- `CLAUDE.md` - Guide pour contributeurs et IA
 
 ## Prochaines étapes
 - Générer squelettes Next.js, React Native, NestJS, FastAPI
