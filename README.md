@@ -2,7 +2,7 @@
 
 Projet de plateforme médicale intégrée.
 
-- Auteurs: Mehdi Abayad, Zahra Zhar
+- Auteurs: Mehdi Abayad
 - Licence: Apache-2.0
 - Namespace: abhar-sante
 - Domaine (placeholder): abhar-sante.ma
