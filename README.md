@@ -5,7 +5,7 @@ Projet de plateforme médicale intégrée.
 - Auteurs: Mehdi Abayad
 - Licence: Apache-2.0
 - Namespace: abhar-sante
-- Domaine (placeholder): abhar-sante.ma
+
 
 ## Vision
 Créer un écosystème de santé numérique sécurisé pour connecter patients, médecins, hôpitaux et chercheurs, avec IA et partage éthique des données.
